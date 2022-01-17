@@ -1,0 +1,30 @@
+# Docker Commands
+
+1. `docker --help` - To get help for commands.
+1. `docker <command> --help` - To get help for a particular command.
+1. `docker run -p <p1:p2> <hash/imageName:tag>` - Expose docker 3000 port on our machine 3000 port. `-p` flags is
+   to `publish`, under which port on our local machine the docker port should be accessible. `p1` is the local port
+   and `p2` is container port.
+1. `docker ps -a` - lists all running ports. `-a` shows all containers without that it shows only running.
+1. `docker stop <container-name` - Stops the container mentioned
+1. `docker run --rm --name <SomeName> -it -d <image-name>` - create container from image and run. if not available then
+   download from docker hub. `-it` flags tells us to expose interactive terminal from container to our local machine. By
+   default, it runs in attach mode.`-d` to run the container in detach mode.`--rm` flag tells to remove the container
+   when it stops.`--name` to give custom name to the container.
+1. `docker build -t <name:tag> <dir>` - Build an image from Dockerfile.`-t` to give custom tag to the
+   image. `<name:tag>` specifies the format of the tag.
+1. `docker start -a -i <containerID/containerName>` - To start an existing container. By default, it starts in detach
+   mode.`-a` to start container in attach mode.`-i` for interactive shell.
+1. `docker logs -f <containerName/ID>` - To print the past logs in console.`-f` to tell docker that we want to follow
+   the future logs.(Kind of attach state)
+1. `docker attach <containerName>` - Attach to a running container.
+1. `docker rm <containerName/s>` - Remove container. Cannot remove running container.Can write multiple names separated
+   by space.
+1. `docker container prune` - delete a stopped containers.
+1. `docker images` - to list all images.
+1. `docker rmi <imageName/s>` - to remove **`images`**. Only images which are not used.
+1. `docker image prune -a inspect` - `prune` remove all images.`inspect` used to inspect the image.`-a` tag to prune
+   images incl. tagged images.
+1. `docker cp <src> <containerName:dest>` - to copy in/out to/from the container.`dest` will be created if it doesn't
+   exist.
+1. ``
