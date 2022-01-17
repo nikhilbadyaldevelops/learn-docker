@@ -22,9 +22,13 @@
    by space.
 1. `docker container prune` - delete a stopped containers.
 1. `docker images` - to list all images.
-1. `docker rmi <imageName/s>` - to remove **`images`**. Only images which are not used.
+1. `docker rmi <imageName/s:tagName>` - to remove **`images`**. Only images which are not used.Mention tag if exist.
 1. `docker image prune -a inspect` - `prune` remove all images.`inspect` used to inspect the image.`-a` tag to prune
    images incl. tagged images.
 1. `docker cp <src> <containerName:dest>` - to copy in/out to/from the container.`dest` will be created if it doesn't
    exist.
-1. ``
+1. `docker push <hostName>:tagname` - It pushed the image to the host mentioned.
+1. `docker pull <image:tagName` - To pull image from docker
+1. `docker tag <oldName> <newName>` - To rename a image.
+1. `docker login` - To loign to docker hub
+1. `docker logout` - to logout from docker hub
