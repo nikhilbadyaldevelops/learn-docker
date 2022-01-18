@@ -1,5 +1,6 @@
 FROM node:17-alpine
 
+
 WORKDIR /app
 
 COPY package.json .
@@ -8,7 +9,12 @@ RUN npm install
 
 COPY . . 
 
-EXPOSE 80
+
+ARG DEFAULT_PORT
+
+ENV PORT $DEFAULT_PORT
+
+EXPOSE $PORT
 
 # VOLUME [ "/app/feedback" ]
 
