@@ -257,3 +257,5 @@ cython_debug/
 .idea
 
 !multi-01-starting-setup/.env
+
+.DS_Store
