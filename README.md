@@ -29,6 +29,7 @@
 1. `docker login` - To loign to docker hub
 1. `docker logout` - to logout from docker hub.
 1. `host.docker.internal`- to get access to local host
+1. `docker exec <container> <command>`- to run command inside container.
 
 ## Volumes(Anonymous Volumes, Named Volumes, Bind Mounts)
 
@@ -45,9 +46,7 @@
 
 ## Docker Compose
 
-      # environment:
-      # - MONGO_INITDB_ROOT_PASSWORD: nikhil
-      # - MONGO_INITDB_ROOT_USERNAME: nikhil
-      # build:
-      #   context: ./backend
-      #   dockerfile: Dockerfile
+`exec`
+`run`
+`up`
+`down` # environment: # - MONGO_INITDB_ROOT_PASSWORD: nikhil # - MONGO_INITDB_ROOT_USERNAME: nikhil # build: # context: ./backend # dockerfile: Dockerfile
