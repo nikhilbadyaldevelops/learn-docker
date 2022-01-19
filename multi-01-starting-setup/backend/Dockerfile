@@ -10,4 +10,7 @@ COPY . .
 
 EXPOSE 80
 
-CMD ["node","app.js"]
+ENV MONGO_USERNAM=root
+ENV MONGO_PASSWORD=root
+
+CMD ["npm","start"]
