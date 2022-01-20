@@ -1,0 +1,3 @@
+*.pem
+.git
+node_modules
