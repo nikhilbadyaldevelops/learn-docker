@@ -1,4 +1,4 @@
-## Build Steps
+# Build Steps
 
 The zip consists of two folder. **frontend** and **backend**.
 
